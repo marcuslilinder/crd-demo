@@ -15,7 +15,7 @@
     "testDocumentValidationResponseStatusSuccess": true,
 
     "_comment_testFinalSendResponseStatusSuccess": "For server responce test. Available values: true or false",
-    "testFinalSendResponseStatusSuccess": false,
+    "testFinalSendResponseStatusSuccess": true,
 
     "_comment_RedirectUrls": "URLs to redirect after payment completion or cancellation",
     "redirectUrl": "https://www.google.com/",
