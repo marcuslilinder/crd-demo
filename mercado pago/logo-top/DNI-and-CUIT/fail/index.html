@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="./images/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>creedo-payform</title>
+        <style>
+            body {
+                position: relative;
+            }
+            body.is-not-ready:before {
+                content: "";
+                z-index: 9;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+            }
+        </style>
+      <script type="module" crossorigin src="./assets/index.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/index.css">
+    </head>
+    <!-- 
+        Body classes for show types
+        creedo-logo-type-header - Logo top
+        creedo-logo-type-footer - Logo bottom
+    -->
+    <body class="is-not-ready">
+        <div class="global-bg"></div>
+
+        <div class="payment-main-container">
+            <div class="payment-wrapper-outer">
+                <div class="creedo-logo-form-header">
+                    <img
+                        src="./images/logo-creedo-big.svg"
+                        alt="creedo capital"
+                    />
+                </div>
+                <div class="payment-wrapper">
+                    <!-- Header - Begin -->
+                    <div class="payment-header">
+                        <div class="payment-header-logo">
+                            <div class="main-logo">
+                                <img
+                                    src="./images/logo-mercado-pago.svg"
+                                    class="mercado-pago"
+                                    alt="logo"
+                                />
+                                <img
+                                    src="./images/logo-mercado-pago-white.svg"
+                                    class="mercado-pago white"
+                                    alt="logo"
+                                />
+                                <img
+                                    src="./images/logo-transferencia-bancaria.svg"
+                                    class="transferencia-bancaria"
+                                    alt="logo"
+                                />
+                                <img
+                                    src="./images/logo-transferencia-bancaria.svg"
+                                    class="transferencia-bancaria white"
+                                    alt="logo"
+                                />
+                            </div>
+                        </div>
+                        <div class="payment-header-amount">
+                            <strong>Importe:</strong>
+                            <div class="payment-header-amount-value">
+                                <span class="currency"></span>
+                                <span class="cost"></span>
+                            </div>
+                        </div>
+                        <div class="payment-header-timer">
+                            <div class="timer">
+                                <p>Tiempo restante:</p>
+                                <div class="value">20:00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Header - End -->
+
+                    <!-- Content - Begin -->
+                    <div class="payment-content">
+                        <div class="payment-content-info">
+                            <div class="payment-content-info-title">
+                                <img
+                                    src="./images/icons/warning.svg"
+                                    class="icon warning-1"
+                                    alt="warning"
+                                />
+                                <img
+                                    src="./images/icons/warning-2.svg"
+                                    class="icon warning-2"
+                                    alt="warning"
+                                />
+                                <h4>Atención</h4>
+                            </div>
+                            <div class="payment-content-info-text">
+                                <!-- <p>
+                                    Tenga en cuenta que cualquier error cometido
+                                    durante el proceso de pago puede provocar la
+                                    pérdida de fondos.
+                                </p>
+                                <p>
+                                    Compruebe que los datos introducidos son
+                                    correctos y pertenecen al titular de la cuenta
+                                    que se utilizará para transferir los fondos.
+                                </p> -->
+                            </div>
+                        </div>
+
+                        <div class="payment-content-form">
+                            <div class="payment-content-form-inner">
+                                <!-- <h4 class="payment-content-form-title">
+                                    Introduzca su CUIT/CUIL
+                                </h4>
+                                <div class="form-group">
+                                    <div class="form-group-label">
+                                        <label>Número de documento</label>
+                                    </div>
+                                    <div class="form-control">
+                                        <input
+                                            type="text"
+                                            name=""
+                                            class="form-control-input"
+                                            placeholder="11-11111111-1"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="form-group success">
+                                    <div class="form-group-label">
+                                        <label>Número de documento</label>
+                                    </div>
+                                    <div class="form-control">
+                                        <input
+                                            type="text"
+                                            name=""
+                                            class="form-control-input"
+                                            placeholder="11-11111111-1"
+                                        />
+                                        <div class="icon success"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group error">
+                                    <div class="form-group-label">
+                                        <label>Número de documento</label>
+                                        <div class="err-text">
+                                            Invalid No (10 digits max)
+                                        </div>
+                                    </div>
+                                    <div class="form-control">
+                                        <input
+                                            type="text"
+                                            name=""
+                                            class="form-control-input"
+                                            placeholder="11-11111111-1"
+                                        />
+                                        <div class="icon error"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group disabled">
+                                    <div class="form-group-label">
+                                        <label>Número de documento</label>
+                                    </div>
+                                    <div class="form-control">
+                                        <input
+                                            type="text"
+                                            name=""
+                                            value="Arantxa Sánchez Vicario"
+                                            class="form-control-input"
+                                            placeholder="11-11111111-1"
+                                        />
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="buttons">
+                                <button class="btn btn-border prev-step">
+                                    Cancelar
+                                </button>
+                                <button class="btn next-step">Siguente</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content - End -->
+                </div>
+
+                <div class="creedo-logo-form-footer">
+                    <span>procesado por</span>
+                    <img src="./images/logo-creedo.svg" alt="creedo capital" />
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

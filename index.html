@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index Pages</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            padding: 24px;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin: 22px 0 16px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 20px 0 16px;
+        }
+
+        h3 {
+            font-size: 14px;
+            margin: 14px 0 14px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #003eb1;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .path {
+            color: #555;
+        }
+        table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+        th, td { border: 1px solid #ddd; padding: 8px; font-size: 12px; }
+        th { background: #f6f8fa; text-align: left; }
+        tbody tr:nth-child(even) { background: #fafbfc; }
+        .method-cell { background: #eef4ff; font-weight: 600; vertical-align: top; }
+        .logo-cell { background: #f2f7ff; font-weight: 600; vertical-align: top; }
+        .flow-cell { background: #f8fbff; font-weight: 600; vertical-align: top; }
+        .state-fail { color: #d60b00; }
+        .state-success { color: #0b8457; }
+        .state-name-check-fail { color: #d00188ac; }
+    </style>
+</head>
+
+<body>
+    <h1>Creedo payment screen instances</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Method</th>
+                <th>Logo</th>
+                <th>Flow</th>
+                <th>State</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td class="method-cell" rowspan="24">Mercado Pago</td><td class="logo-cell" rowspan="8">logo-bottom</td><td class="flow-cell" rowspan="2">CUIT</td><td class="state-fail">Fail</td><td><a href="./mercado pago/logo-bottom/CUIT/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./mercado pago/logo-bottom/CUIT/success/index.html">Open</a></td></tr>
+            <tr><td class="flow-cell" rowspan="3">DNI-and-CUIT</td><td class="state-fail">Fail</td><td><a href="./mercado pago/logo-bottom/DNI-and-CUIT/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-name-check-fail">Name check fail</td><td><a href="./mercado pago/logo-bottom/DNI-and-CUIT/name-check-fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./mercado pago/logo-bottom/DNI-and-CUIT/success/index.html">Open</a></td></tr>
+            <tr><td class="flow-cell" rowspan="3">Full name</td><td class="state-fail">Fail</td><td><a href="./mercado pago/logo-bottom/Name/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-name-check-fail">Name check fail</td><td><a href="./mercado pago/logo-bottom/Name/name-check-fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./mercado pago/logo-bottom/Name/success/index.html">Open</a></td></tr>
+
+            <tr><td class="logo-cell" rowspan="8">logo-none</td><td class="flow-cell" rowspan="2">CUIT</td><td class="state-fail">Fail</td><td><a href="./mercado pago/logo-none/CUIT/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./mercado pago/logo-none/CUIT/success/index.html">Open</a></td></tr>
+            <tr><td class="flow-cell" rowspan="3">DNI-and-CUIT</td><td class="state-fail">Fail</td><td><a href="./mercado pago/logo-none/DNI-and-CUIT/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-name-check-fail">Name check fail</td><td><a href="./mercado pago/logo-none/DNI-and-CUIT/name-check-fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./mercado pago/logo-none/DNI-and-CUIT/success/index.html">Open</a></td></tr>
+            <tr><td class="flow-cell" rowspan="3">Full name</td><td class="state-fail">Fail</td><td><a href="./mercado pago/logo-none/Name/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-name-check-fail">Name check fail</td><td><a href="./mercado pago/logo-none/Name/name-check-fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./mercado pago/logo-none/Name/success/index.html">Open</a></td></tr>
+
+            <tr><td class="logo-cell" rowspan="8">logo-top</td><td class="flow-cell" rowspan="2">CUIT</td><td class="state-fail">Fail</td><td><a href="./mercado pago/logo-top/CUIT/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./mercado pago/logo-top/CUIT/success/index.html">Open</a></td></tr>
+            <tr><td class="flow-cell" rowspan="3">DNI-and-CUIT</td><td class="state-fail">Fail</td><td><a href="./mercado pago/logo-top/DNI-and-CUIT/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-name-check-fail">Name check fail</td><td><a href="./mercado pago/logo-top/DNI-and-CUIT/name-check-fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./mercado pago/logo-top/DNI-and-CUIT/success/index.html">Open</a></td></tr>
+            <tr><td class="flow-cell" rowspan="3">Full name</td><td class="state-fail">Fail</td><td><a href="./mercado pago/logo-top/Name/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-name-check-fail">Name check fail</td><td><a href="./mercado pago/logo-top/Name/name-check-fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./mercado pago/logo-top/Name/success/index.html">Open</a></td></tr>
+
+            <tr><td class="method-cell" rowspan="24">Transferencia bancaria</td><td class="logo-cell" rowspan="8">logo-bottom</td><td class="flow-cell" rowspan="2">CUIT</td><td class="state-fail">Fail</td><td><a href="./transferencia bancaria/logo-bottom/CUIT/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./transferencia bancaria/logo-bottom/CUIT/success/index.html">Open</a></td></tr>
+            <tr><td class="flow-cell" rowspan="3">DNI-and-CUIT</td><td class="state-fail">Fail</td><td><a href="./transferencia bancaria/logo-bottom/DNI-and-CUIT/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-name-check-fail">Name check fail</td><td><a href="./transferencia bancaria/logo-bottom/DNI-and-CUIT/name-check-fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./transferencia bancaria/logo-bottom/DNI-and-CUIT/success/index.html">Open</a></td></tr>
+            <tr><td class="flow-cell" rowspan="3">Full name</td><td class="state-fail">Fail</td><td><a href="./transferencia bancaria/logo-bottom/Name/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-name-check-fail">Name check fail</td><td><a href="./transferencia bancaria/logo-bottom/Name/name-check-fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./transferencia bancaria/logo-bottom/Name/success/index.html">Open</a></td></tr>
+
+            <tr><td class="logo-cell" rowspan="8">logo-none</td><td class="flow-cell" rowspan="2">CUIT</td><td class="state-fail">Fail</td><td><a href="./transferencia bancaria/logo-none/CUIT/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./transferencia bancaria/logo-none/CUIT/success/index.html">Open</a></td></tr>
+            <tr><td class="flow-cell" rowspan="3">DNI-and-CUIT</td><td class="state-fail">Fail</td><td><a href="./transferencia bancaria/logo-none/DNI-and-CUIT/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-name-check-fail">Name check fail</td><td><a href="./transferencia bancaria/logo-none/DNI-and-CUIT/name-check-fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./transferencia bancaria/logo-none/DNI-and-CUIT/success/index.html">Open</a></td></tr>
+            <tr><td class="flow-cell" rowspan="3">Full name</td><td class="state-fail">Fail</td><td><a href="./transferencia bancaria/logo-none/Name/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-name-check-fail">Name check fail</td><td><a href="./transferencia bancaria/logo-none/Name/name-check-fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./transferencia bancaria/logo-none/Name/success/index.html">Open</a></td></tr>
+
+            <tr><td class="logo-cell" rowspan="8">logo-top</td><td class="flow-cell" rowspan="2">CUIT</td><td class="state-fail">Fail</td><td><a href="./transferencia bancaria/logo-top/CUIT/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./transferencia bancaria/logo-top/CUIT/success/index.html">Open</a></td></tr>
+            <tr><td class="flow-cell" rowspan="3">DNI-and-CUIT</td><td class="state-fail">Fail</td><td><a href="./transferencia bancaria/logo-top/DNI-and-CUIT/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-name-check-fail">Name check fail</td><td><a href="./transferencia bancaria/logo-top/DNI-and-CUIT/name-check-fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./transferencia bancaria/logo-top/DNI-and-CUIT/success/index.html">Open</a></td></tr>
+            <tr><td class="flow-cell" rowspan="3">Full name</td><td class="state-fail">Fail</td><td><a href="./transferencia bancaria/logo-top/Name/fail/index.html">Open</a></td></tr>
+            <tr><td class="state-name-check-fail">Name check fail</td><td><a href="./transferencia bancaria/logo-top/Name/name-check-fail/index.html">Open</a></td></tr>
+            <tr><td class="state-success">Success</td><td><a href="./transferencia bancaria/logo-top/Name/success/index.html">Open</a></td></tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
