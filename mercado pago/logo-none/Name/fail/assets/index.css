@@ -1194,8 +1194,9 @@ h6 {
 
 @media only screen and (max-width:24.9375rem) {
     .payment-content {
-        padding: 5.625rem .75rem 1.5rem;
-        margin-top: -5.625rem
+        padding: 1.5rem .75rem;
+        padding-top: 5.625rem !important;
+        margin-top: -5.625rem !important
     }
 }
 
